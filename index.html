@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       window.onload = function () {
         if (window.location.hash === "") {
@@ -24,15 +23,15 @@
     </script>
     <title>Mia Zhao</title>
   </head>
-  <body class="flex bg-zinc-900 text-slate-300 h-screen">
-    <nav id="nav" class="flex md:flex-col text-xl justify-center w-1/4">
-      <ul class="m-auto">
-        <li class="my-20 hover:text-slate-500">
+  <body>
+    <nav id="nav">
+      <ul>
+        <li>
           <a id="a-about" href="#about" onClick="updateSelected('about')"
             >About</a
           >
         </li>
-        <li class="my-20 hover:text-slate-500">
+        <li>
           <a
             id="a-projects"
             href="#projects"
@@ -40,18 +39,18 @@
             >Projects</a
           >
         </li>
-        <li class="my-20 hover:text-slate-500">
+        <li>
           <a id="a-contact" href="#contact" onClick="updateSelected('contact')"
             >Contact</a
           >
         </li>
       </ul>
     </nav>
-    <main class="content w-3/4">
+    <main class="content">
       <div id="about" class="content-section"></div>
       <div id="projects" class="content-section">
         <div>
-          <img class="h-5 w-5" src="./assets/tool.svg" />
+          <img src="./assets/tool.svg" />
         </div>
       </div>
       <div id="contact" class="content-section"></div>
