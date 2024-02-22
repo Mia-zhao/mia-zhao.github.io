@@ -1,0 +1,11 @@
+#nav a.selected {
+  color: #64748b;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section:target {
+  display: block;
+}
