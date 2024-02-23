@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: row;
   background-color: #18181b;
   color: #cbd5e1;
   height: 100vh;
@@ -26,11 +27,14 @@ nav {
 
 nav > ul {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 nav > ul > li {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   *:hover {
     color: #64748b;
   }
@@ -87,4 +91,30 @@ main {
 
 #contact li {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    > ul {
+      flex-direction: row;
+      justify-content: space-evenly;
+      > li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .content-section {
+    margin-right: 0;
+    font-size: 16px;
+    > ul {
+      padding: 0;
+    }
+  }
 }
